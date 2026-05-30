@@ -607,7 +607,7 @@ def render_sidebar() -> None:
         """
         <div style="background: linear-gradient(135deg, #eff6ff, #fafbff); border: 1px solid #bfdbfe; border-radius: 14px; padding: 0.9rem 1rem; margin-bottom: 0.75rem;">
             <strong style="font-size:0.95rem;">🧩 BA Assistant</strong><br>
-            <span style="font-size:0.82rem; color:#475569;">Full requirements analysis with 5 AI agents — epics, user stories, NFRs, Mermaid diagrams in 60s.</span><br>
+            <span style="font-size:0.82rem; color:#475569;">AI-powered requirements analysis — structured specs, user stories, NFRs, Mermaid diagrams in 60s.</span><br>
             <a href="https://touseefshaik.com/tools/ba-assistant" target="_blank" style="font-size:0.82rem;">Try it →</a>
         </div>
         <div style="background: linear-gradient(135deg, #fff7ed, #fffbf7); border: 1px solid #fed7aa; border-radius: 14px; padding: 0.9rem 1rem; margin-bottom: 0.75rem;">
@@ -764,6 +764,19 @@ def main() -> None:
             st.markdown("---")
             st.markdown("## Generated BA Artifacts")
             render_final_output(st.session_state.final_output)
+            st.markdown("---")
+            st.markdown(
+                """
+                <div style="background: linear-gradient(135deg, #eff6ff, #f0f7ff); border: 1px solid #93c5fd; border-radius: 16px; padding: 1.5rem 2rem; margin-top: 1rem;">
+                    <h3 style="margin:0 0 0.4rem 0; font-size:1.15rem;">Want deeper analysis?</h3>
+                    <p style="margin:0 0 1rem 0; color:#475569; font-size:0.92rem;">
+                        BA Assistant goes further — NFRs, risk assessment, architecture notes, and full BRD processing. Free to start.
+                    </p>
+                    <a href="https://touseefshaik.com/tools/ba-assistant" target="_blank" style="display:inline-block; background:#2563eb; color:#fff; padding:0.6rem 1.4rem; border-radius:100px; font-weight:600; text-decoration:none; font-size:0.9rem;">Try BA Assistant →</a>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
     st.markdown(
         "<div class='footer'>Built with Agno + Gemini 3.5 Flash + DeepSeek  ·  By <a href='https://touseefshaik.com' target='_blank'>Touseef Shaik</a></div>",
