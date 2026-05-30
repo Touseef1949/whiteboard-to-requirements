@@ -602,6 +602,24 @@ def render_sidebar() -> None:
     )
 
     st.sidebar.markdown("---")
+    st.sidebar.subheader("🛠 More AI tools for BAs")
+    st.sidebar.markdown(
+        """
+        <div style="background: linear-gradient(135deg, #eff6ff, #fafbff); border: 1px solid #bfdbfe; border-radius: 14px; padding: 0.9rem 1rem; margin-bottom: 0.75rem;">
+            <strong style="font-size:0.95rem;">🧩 BA Assistant</strong><br>
+            <span style="font-size:0.82rem; color:#475569;">Full requirements analysis with 5 AI agents — epics, user stories, NFRs, Mermaid diagrams in 60s.</span><br>
+            <a href="https://touseefshaik.com/tools/ba-assistant" target="_blank" style="font-size:0.82rem;">Try it →</a>
+        </div>
+        <div style="background: linear-gradient(135deg, #fff7ed, #fffbf7); border: 1px solid #fed7aa; border-radius: 14px; padding: 0.9rem 1rem; margin-bottom: 0.75rem;">
+            <strong style="font-size:0.95rem;">🎙️ Sarvam Voice AI</strong><br>
+            <span style="font-size:0.82rem; color:#475569;">Text-to-speech in 11 Indian languages.</span><br>
+            <a href="https://touseefshaik.com/tools/sarvam-voice-ai" target="_blank" style="font-size:0.82rem;">Try it →</a>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.sidebar.markdown("---")
     if st.sidebar.button("Reset app", use_container_width=True):
         reset_all_state()
         st.rerun()
@@ -748,7 +766,7 @@ def main() -> None:
             render_final_output(st.session_state.final_output)
 
     st.markdown(
-        "<div class='footer'>Built with Agno + Gemini 3.5 Flash + DeepSeek</div>",
+        "<div class='footer'>Built with Agno + Gemini 3.5 Flash + DeepSeek  ·  By <a href='https://touseefshaik.com' target='_blank'>Touseef Shaik</a></div>",
         unsafe_allow_html=True,
     )
 
