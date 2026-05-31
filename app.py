@@ -611,9 +611,9 @@ def render_sidebar() -> None:
             <a href="https://touseefshaik.com/tools/ba-assistant" target="_blank" style="font-size:0.82rem;">Try it →</a>
         </div>
         <div style="background: linear-gradient(135deg, #fff7ed, #fffbf7); border: 1px solid #fed7aa; border-radius: 14px; padding: 0.9rem 1rem; margin-bottom: 0.75rem;">
-            <strong style="font-size:0.95rem;">🎙️ Sarvam Voice AI</strong><br>
-            <span style="font-size:0.82rem; color:#475569;">Text-to-speech in 11 Indian languages.</span><br>
-            <a href="https://touseefshaik.com/tools/sarvam-voice-ai" target="_blank" style="font-size:0.82rem;">Try it →</a>
+            <strong style="font-size:0.95rem;">🔊 Sarvam Text to Speech</strong><br>
+            <span style="font-size:0.82rem; color:#475569;">Streaming speech in 11 Indian languages with 7 voices.</span><br>
+            <a href="https://touseefshaik.com/tools/sarvam-tts" target="_blank" style="font-size:0.82rem;">Try it →</a>
         </div>
         """,
         unsafe_allow_html=True,
